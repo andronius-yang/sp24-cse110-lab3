@@ -1,1 +1,2 @@
-# Lab 2 - Starter
+# Lab 2
+https://andronius-yang.github.io/CSE110Lab2/
