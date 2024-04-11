@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battle Meeting Minutes</title>
+    <link rel="icon" href="media/Flag_human_9.png">
+</head>
+<body>
+    <header>
+        <h1>Meeting Minutes for the War of Defense Against <i>the Commonwealth of Man</i></h1>
+        <nav>
+            <ul>
+                <li><a href="#sec1">War Briefing</a></li>
+                <li><a href="#sec2">Key Points of Defense</a></li>
+                <li><a href="#sec3">Plans of Reaction</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sec1">
+            <h2>War Briefing</h2>
+            <p><b>Date:</b> <time datetime="2254-06-07">7th June, 2254</time><br>
+            <b>Location:</b> Sol III</p>
+
+            <hr>
+            <p>Participants:</p>
+            <ul>
+                <li><strong><em>Dolores Muwanga</em></strong> - President of United Nations of Earth</li>
+                <li><em>Leila Warren</em> - War Secretary of United Nations of Earth</li>
+                <li><em>Tori Irwin</em> - Secretary of Defense of United Nations of Earth</li>
+            </ul>
+            <details>
+                <img src="media/Flag_human_9.png" alt="Ensign of Signature">
+                <summary>Updates on the current stance of war:</summary>
+                <audio controls>
+                    <source src="media/audio.mp3" type="audio/mpeg">
+                </audio>
+                <video controls>
+                    <source src="media/video.mp4" type="video/mp4">
+                </video>
+            </details>
+        </section>
+
+        <section id="sec2">
+            <h2>Key Points of Defense</h2>
+            <div>
+                <h3>Fortification of Sol IV</h3>
+                <p>Discussion led by <span>Tori Irwin</span>:</p>
+                <p>Fortification efforts of the North and South Pole of Sol IV are scheduled to be completed by 2255.</p>
+            </div>
+        </section>
+
+        <section id="sec3">
+            <h2>Plans of Reaction</h2>
+            <ol>
+                <li>Dolores Muwanga to finalize the budget of construction of new Class XII Destroyers.</li>
+                <li>Leila Warren to update navy of potential engagement opportunities and locations.</li>
+                <li>Tori Irwin to provide the final schema of the defense of system Sol.</li>
+            </ol>
+        </section>
+
+        
+
+        <form>
+            <fieldset>
+                <legend>Sample Drafting Form</legend>
+
+                <p>Interested in defending freedom and liberty across the galaxy against the Commonwealth of Man? Enlist here!</p>
+                
+                <label for="name-id">CITIZEN ID:</label>
+                <input type="text" id="name-id" name="name-id"><br><br> 
+
+                <label for="enlist-date">Enlist Date:</label>
+                <input type="date" id="enlist-date" name="enlist-date"><br><br>
+                
+                <input type="checkbox" id="prev-training" name="prev-training">
+                <label for="prev-training">I have previously completed military training</label><br><br>
+                
+                <input type="radio" id="yes" name="sector-inner" value="yes">
+                <label for="yes">I live in Sectors 1 to 9</label><br>
+                <input type="radio" id="no" name="sector-outer" value="no">
+                <label for="no">I live in Sectors 9+, or in Special Administrative Zones</label><br><br>
+                
+                <label for="health">Select Health Condition:</label>
+                <select id="health" name="health">
+                    <option value="high">I am in healthy condition according to the requirements.</option>
+                    <option value="medium">I do not meet all health requirements.</option>
+                    <option value="low">I have classs 2+ disability and will require special purpose augments.</option>
+                </select><br><br>
+                
+                <label for="additional-info">Additional required information:</label>
+                <textarea id="additional-info" name="additional-info" rows="2" cols="40"></textarea><br><br>
+                
+                <label for="timeslots">Meeting time for drafting center:</label>
+                <input list="timeslots" name="timeslot" id="timeslot">
+                <datalist id="timeslots">
+                    <option value="Morning 06:00 ~ 12:00">
+                    <option value="Afternoon 12:00 ~ 17:00">
+                    <option value="Evening 17:00 ~ 26:00">
+                </datalist><br><br>
+                
+                <button type="submit">Submit Drafting Form</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Meeting minutes compiled by <a href="https://stellaris.paradoxwikis.com/Preset_empires">the General Secretariat</a>.</p>
+    </footer>
+</body>
+</html>
