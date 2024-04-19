@@ -1,2 +1,2 @@
-# Lab 2
-https://andronius-yang.github.io/CSE110Lab2/
+# Lab 3
+https://andronius-yang.github.io/sp24-cse110-lab3/
