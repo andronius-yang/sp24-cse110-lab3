@@ -5,20 +5,30 @@
     <meta name="author" content="Andrew Yang">
     <title>Battle Meeting Minutes</title>
     <link rel="icon" href="media/Flag_human_9.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+          background-color: linen;
+        }
+    </style>
 </head>
 <body>
     <legend><h1>Meeting Minutes for the War of Defense Against <i>the Commonwealth of Man</i></h1></legend>
     <header>
         <nav>
-            <ul>
-                <li><a href="#sec1">War Briefing</a></li>
-                <li><a href="#sec2">Key Points of Defense</a></li>
-                <li><a href="#sec3">Plans of Reaction</a></li>
+            <ul id="links">
+                <li><a href="#sec1" class="war">War Briefing</a></li>
+                <li><a href="#sec2" class="war">Key Points of Defense</a></li>
+                <li><a href="#sec3" class="war">Plans of Reaction</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <img src="media/Flag_human_9.png" alt="United Nations of Earth" id="logo">
         <section id="sec1">
             <h2>War Briefing</h2>
             <p><b>Date:</b> <time datetime="2254-06-07">7th June, 2254</time><br>
@@ -26,15 +36,20 @@
 
             <hr>
             <p>Participants:</p>
-            <ul>
+            <ul id="participants">
                 <li><strong><em>Dolores Muwanga</em></strong> - President of United Nations of Earth</li>
                 <li><em>Leila Warren</em> - War Secretary of United Nations of Earth</li>
                 <li><em>Tori Irwin</em> - Secretary of Defense of United Nations of Earth</li>
             </ul>
-            <details>
-                <summary>Updates on the current stance of war:</summary>
+            <div class="container">
+                <h3>Updates on the current stance of war:</h3>
 
-                <img src="media/Flag_human_9.png" alt="Ensign of Signature">
+                <details>
+                    <summary>Core Requirements:</summary>
+                    <h3>After the sudden attack by the Commonwealth of Man, we are in dire need of more soldiers.</h3>
+                </details>
+
+                <img src="media/Flag_human_9.png" alt="United Nations of Earth">
                 
                 <audio controls>
                     <source src="media/audio.mp3" type="audio/mpeg">
@@ -42,7 +57,16 @@
                 <video controls>
                     <source src="media/video.mp4" type="video/mp4">
                 </video>
-            </details>
+            </div>
+        </section>
+        <section id="sec15">
+            <h2> Potential Enemies </h2>
+            <div class="enemies">
+                <img src="media/Flag_human_4.png" alt="Commonwealth of Man">
+                <img src="media/Flag_pointy_2.png" alt="Tzynn Empire">
+                <img src="media/Flag_pointy_6.png" alt="Glebsig Foundation">
+                <img src="media/Flag_zoological_6.png" alt="Kingdom of Yondarim">
+            </div>
         </section>
 
         <section id="sec2">
@@ -65,37 +89,37 @@
 
         
 
-        <form>
+        <form id="enlist">
             <fieldset>
-                <legend>Sample Drafting Form</legend>
+                <legend style="font-size: xx-large">Sample Drafting Form</legend>
 
-                <p>Interested in defending freedom and liberty across the galaxy against the Commonwealth of Man? Enlist here!</p>
+                <p style="font-size: xx-large">Interested in defending freedom and liberty across the galaxy against the Commonwealth of Man? Enlist here!</p>
                 
-                <label for="name-id">CITIZEN ID:</label>
+                <label for="name-id" style="font-size: x-large">CITIZEN ID:</label>
                 <input type="text" id="name-id" name="name-id"><br><br> 
 
-                <label for="enlist-date">Enlist Date:</label>
+                <label for="enlist-date" style="font-size: x-large">Enlist Date:</label>
                 <input type="date" id="enlist-date" name="enlist-date"><br><br>
                 
                 <input type="checkbox" id="prev-training" name="prev-training">
-                <label for="prev-training">I have previously completed military training</label><br><br>
+                <label for="prev-training" style="font-size: x-large">I have previously completed military training</label><br><br>
                 
                 <input type="radio" id="yes" name="sector" value="yes">
-                <label for="yes">I live in Sectors 1 to 9</label><br>
+                <label for="yes" style="font-size: x-large">I live in Sectors 1 to 9</label><br>
                 <input type="radio" id="no" name="sector" value="no">
-                <label for="no">I live in Sectors 9+, or in Special Administrative Zones</label><br><br>
+                <label for="no" style="font-size: x-large">I live in Sectors 9+, or in Special Administrative Zones</label><br><br>
                 
-                <label for="health">Select Health Condition:</label>
+                <label for="health" style="font-size: x-large">Select Health Condition:</label>
                 <select id="health" name="health">
                     <option value="high">I am in healthy condition according to the requirements.</option>
                     <option value="medium">I do not meet all health requirements.</option>
                     <option value="low">I have classs 2+ disability and will require special purpose augments.</option>
                 </select><br><br>
                 
-                <label for="additional-info">Additional required information:</label>
+                <label for="additional-info" style="font-size: x-large">Additional required information:</label>
                 <textarea id="additional-info" name="additional-info" rows="2" cols="40"></textarea><br><br>
                 
-                <label for="timeslot">Meeting time for drafting center:</label>
+                <label for="timeslot" style="font-size: x-large">Meeting time for drafting center:</label>
                 <input list="timeslots" name="timeslot" id="timeslot">
                 <datalist id="timeslots">
                     <option value="Morning 06:00 ~ 12:00">
@@ -103,7 +127,7 @@
                     <option value="Evening 17:00 ~ 26:00">
                 </datalist><br><br>
                 
-                <button type="submit">Submit Drafting Form</button>
+                <button type="submit" class="submitButton">Submit Drafting Form</button>
             </fieldset>
         </form>
     </main>

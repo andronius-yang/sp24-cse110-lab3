@@ -1,0 +1,135 @@
+@font-face { /* fonts */
+    font-family: Orbitron;
+    font-style: normal;
+    font-weight: 400 900;
+    src: url(https://fonts.gstatic.com/s/orbitron/v31/yMJRMIlzdpvBhQQL_Qq7dy0.woff2) format('woff2');
+}
+
+:root{
+    --pure-red: color(display-p3 1 0 0); /* fallback variable and predefined color space */
+}
+
+
+
+h2 { /* Highlight headers, element selector */
+    color: rgba(0,0,255,1); /* RGBA color */
+    background-color: rgb(255, 0, 0); /* RGB color*/
+}
+
+* { /* universal selector, Cool Stellaris Font */
+    font-family: "Orbitron", sans-serif;
+}
+
+@media only screen and (max-width: 600px) { /* media query */
+    body {
+        font-size: 24px;
+    }
+}
+
+a.war:hover{ /*:hover() pseudo class selector and . combining two selectors */
+    color: hsl(125, 50%, 50%); /* hsl */
+}
+
+section ul {
+    color: #FFD700; /* full hex code */
+    background-color: #444; /* 3 hex code*/
+}
+
+body legend{ /* descendant combinator */
+    background-color: hsla(0, 5%, 62%, 0.5); /* hsla */
+}
+
+p + p{ /* adjacent sibling combinator */
+    text-align:center; /* text align*/
+}
+
+.container { /* class selector*/
+    display: flex; /* flexbox */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1cm; /* absolute unit */
+}
+
+.enemies {
+    display:grid; /* grid */
+    justify-items: center;
+    grid-template-columns: [col0] 50vw [col1] 50vw [col2]; /*relative unit*/
+    grid-template-rows: [row0] 50% [row1] 50% [row2];
+}
+
+img[src="media/Flag_human_9.png"]{ /* attribute selector*/
+    background-color: black; /* color name & background color */
+}
+
+.submitButton {
+  width: 15em; /*relative unit*/
+  height: 5ex;
+  border: none;
+  border-radius: 5px; /* absolute unit */
+  font-weight: bold;
+  color: white; /* text color */
+  cursor: pointer;
+  background-image: linear-gradient(75deg, #6af340 60%, var(--pure-red, rgb(255, 0, 0)));
+}
+
+.submitButton:active { /*active pseudo class */
+    box-shadow: 2px 2px 5px color-mix(in lch, #6af340 60%, var(--pure-red, rgb(255, 0, 0)));
+    /* mixing colors and using the fallback variable */
+}
+
+#enlist { /* id selector*/
+    display: inline-block; /* inline block display */
+    margin: auto; /* auto margin */
+}
+
+#sec1, #sec2, #sec3 { /* selector list */
+    display: block; /* block display */
+    position:static; /* static position*/
+}
+
+section:has(> h2) { /* :has() and > child combinator */
+    margin-top: 5mm; /* absolute unit*/
+    margin-bottom: 5mm;
+    margin-left: 5mm;
+    margin-right: 5mm; /* long margin */
+}
+
+#sec2{
+  border: 2mm solid rebeccapurple; /*shorthand border*/
+  padding: .5rem .1rem 1rem .1rem; /*relative unit & shorthand padding*/
+  margin: 1mm 1mm 1mm 1mm; /* shorthand margin*/
+}
+
+#sec2{
+    & h2{ /* nested selector, gives error but works correctly */
+        text-decoration: underline; /* text decor */
+    }
+}
+
+#sec3{
+    border-width: 3mm;
+    border-style:dotted;
+    border-color:olivedrab; 
+    border-radius: 5mm; /* long border */
+
+    padding-top: .5rem;
+    padding-right: .1rem;
+    padding-bottom: 1rem;
+    padding-left: .1rem; /*long padding*/
+}
+
+#logo {
+    position:absolute; /* absolute position */ 
+    top:150px;
+    right:30px;
+    width: 10%;
+    height: auto;
+    max-width:120px;
+    min-width:30px;
+    /* all sizing */
+}
+
+summary ~ h3{ /* general sibling combinator */
+    text-decoration:underline;
+}
